@@ -9,9 +9,9 @@ $sql = "";
 $query = $db->prepare($sql);
 // Exécution de la requête
 $query->execute();
-// Stockage du résultat dans un tableau associatif [personne1, personne2, ...]
-$result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 require_once("./src/close.php");
+
+// Redirection vers la page d'accueil
 header('Location: ./index.php');
 ?>
