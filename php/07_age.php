@@ -2,7 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour récupérer la moyenne d'âge des utilisateurs groupés par genre
-$sql = "";
+$sql = "SELECT gender, AVG(YEAR(CURDATE()) - YEAR(birth_date)) AS average_age FROM users GROUP BY gender;";
 
 
 // Préparation de la requête

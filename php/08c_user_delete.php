@@ -2,7 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour supprimer le nouvel utilisateur
-$sql = "";
+$sql = "DELETE FROM users ORDER BY id DESC LIMIT 1;";
 
 
 // Préparation de la requête

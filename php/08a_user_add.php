@@ -2,7 +2,8 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour insérer un nouvel utilisateur
-$sql = "";
+$sql = "INSERT INTO users (first_name, last_name, email, gender, birth_date, country)
+VALUES ('Guilain', 'De Meyer', 'GuilainDemeyer@google.com', 'Male', '1984-06-13', 'France');";
 
 
 // Préparation de la requête

@@ -2,7 +2,9 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour récupérer tous les pays dont le nom commence par la lettre 'N'
-$sql = "";
+$sql = "SELECT DISTINCT country
+FROM users
+WHERE country LIKE 'N%';";
 
 
 // Préparation de la requête

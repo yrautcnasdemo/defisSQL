@@ -2,7 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour récupérer le nombre de personnes pour chaque genre
-$sql = "";
+$sql = "SELECT gender, COUNT(*) AS user_count FROM users GROUP BY gender;";
 
 
 // Préparation de la requête
